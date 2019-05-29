@@ -30,13 +30,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <h2 class="pull-left">User Details</h2>
-                        <a href="create.php" class="btn btn-success pull-right">Add New User</a>
+                        <h2 class="pull-left">User details</h2>
+                        <a href="create.php" class="btn btn-success pull-right">Add User</a>
                     </div>
                     <?php
-                    // Include config file
-                    require_once "conf.php";
-                    
+                    // Include configuration file
+                    include_once "conf.php";
                     // Attempt select query execution
                     $sql = "SELECT * FROM users";
                     if($result = mysqli_query($con, $sql)){
